@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImportaContratosHub.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbdc6a271a229c163a9e85be3b8c520af97ed382")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImportaContratosHub.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImportaContratosHub.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
