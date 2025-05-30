@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportaContratosHub.API", "ImportaContratosHub.API\ImportaContratosHub.API.csproj", "{18AB0194-2BB8-40C1-9E87-E50AEC38FA2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{18AB0194-2BB8-40C1-9E87-E50AEC38FA2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18AB0194-2BB8-40C1-9E87-E50AEC38FA2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18AB0194-2BB8-40C1-9E87-E50AEC38FA2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18AB0194-2BB8-40C1-9E87-E50AEC38FA2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EB8E07F9-8EB6-4FD3-9853-582974D1230E}
+	EndGlobalSection
+EndGlobal
