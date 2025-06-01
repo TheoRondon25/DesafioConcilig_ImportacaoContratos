@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "ImportaContratosHub.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ImportaContratosHub.API.Models.Requests.LoginRequestAuth",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ImportaContratosHub.API.Controllers.ImportacaoController",
     "Method": "Upload",
     "RelativePath": "api/Importacao/upload",

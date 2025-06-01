@@ -181,3 +181,4 @@ C:\Documentos\PROJETOS_ESTUDO\DesafioConcilig_ImportacaoArquivo\DesafioConcilig_
 C:\Documentos\PROJETOS_ESTUDO\DesafioConcilig_ImportacaoArquivo\DesafioConcilig_ImportacaoContratos\ImportaContratosHub.API\bin\Debug\net8.0\CsvHelper.dll
 C:\Documentos\PROJETOS_ESTUDO\DesafioConcilig_ImportacaoArquivo\DesafioConcilig_ImportacaoContratos\ImportaContratosHub.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 C:\Documentos\PROJETOS_ESTUDO\DesafioConcilig_ImportacaoArquivo\DesafioConcilig_ImportacaoContratos\ImportaContratosHub.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Documentos\PROJETOS_ESTUDO\DesafioConcilig_ImportacaoArquivo\DesafioConcilig_ImportacaoContratos\ImportaContratosHub.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
