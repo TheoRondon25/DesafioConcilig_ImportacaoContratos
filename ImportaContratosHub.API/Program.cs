@@ -3,7 +3,9 @@ using ImportaContratosHub.API.Services;
 using ImportadorContratos.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using System.Text;
 
+Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance); // para aceitar acentos no CSV
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -4,6 +4,7 @@ using ImportaContratosHub.API.DataBase;
 using ImportaContratosHub.API.Models;
 using ImportaContratosHub.API.Services;
 using System.Globalization;
+using System.Text;
 
 namespace ImportadorContratos.Services;
 
@@ -18,7 +19,7 @@ public class ContratoService : IContratoService
 
     public async Task ProcessarCSVAsync(Stream stream, int usuarioId, string nomeArquivo)
     {
-        using var reader = new StreamReader(stream);
+        using var reader = new StreamReader(stream, Encoding.GetEncoding("windows-1252")); // para aceitar acentos 
         var config = new CsvConfiguration(new CultureInfo("pt-BR"))
         {
             Delimiter = ";", 
@@ -32,7 +33,7 @@ public class ContratoService : IContratoService
         var arquivo = new ArquivoImportado
         {
             NomeArquivo = nomeArquivo,
-            DataImportacao = DateTime.UtcNow,
+            DataImportacao = DateTime.Now,
             UsuarioId = usuarioId
         };
 
@@ -49,7 +50,7 @@ public class ContratoService : IContratoService
             Valor = r.Valor,
             ArquivoImportadoId = arquivo.Id,
             UsuarioId = usuarioId,
-            DataImportacao = DateTime.UtcNow
+            DataImportacao = DateTime.Now
         }).ToList();
 
         _context.Contratos.AddRange(contratos);
