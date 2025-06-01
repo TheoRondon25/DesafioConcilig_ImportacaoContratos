@@ -16,6 +16,36 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ImportaContratosHub.API.Controllers.ConsultasController",
+    "Method": "GetArquivosImportados",
+    "RelativePath": "api/Consultas/arquivos-importados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImportaContratosHub.API.Controllers.ConsultasController",
+    "Method": "GetAnalisePorCliente",
+    "RelativePath": "api/Consultas/clientes/analise",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ImportaContratosHub.API.Controllers.ConsultasController",
+    "Method": "GetContratos",
+    "RelativePath": "api/Consultas/contratos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ImportaContratosHub.API.Controllers.ImportacaoController",
     "Method": "Upload",
     "RelativePath": "api/Importacao/upload",

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImportaContratosHub.API</name>
+    </assembly>
+    <members>
+        <member name="M:ImportaContratosHub.API.Controllers.ConsultasController.GetArquivosImportados">
+            <summary>
+            Consulta todos os arquivos importados junto com o nome do usuário que realizou a importação.
+            </summary>
+        </member>
+        <member name="M:ImportaContratosHub.API.Controllers.ConsultasController.GetContratos">
+            <summary>
+            Consulta todos os contratos importados com informações básicas.
+            </summary>
+        </member>
+        <member name="M:ImportaContratosHub.API.Controllers.ConsultasController.GetAnalisePorCliente">
+            <summary>
+            Consulta o valor total dos contratos por cliente e o maior atraso em dias (entre vencimento e hoje).
+            </summary>
+        </member>
+    </members>
+</doc>

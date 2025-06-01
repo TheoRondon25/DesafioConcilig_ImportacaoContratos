@@ -36,6 +36,45 @@
         }
       }
     },
+    "/api/Consultas/arquivos-importados": {
+      "get": {
+        "tags": [
+          "Consultas"
+        ],
+        "summary": "Consulta todos os arquivos importados junto com o nome do usuário que realizou a importação.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Consultas/contratos": {
+      "get": {
+        "tags": [
+          "Consultas"
+        ],
+        "summary": "Consulta todos os contratos importados com informações básicas.",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Consultas/clientes/analise": {
+      "get": {
+        "tags": [
+          "Consultas"
+        ],
+        "summary": "Consulta o valor total dos contratos por cliente e o maior atraso em dias (entre vencimento e hoje).",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Importacao/upload": {
       "post": {
         "tags": [

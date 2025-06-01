@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using System.Reflection;
 using System.Text;
 
 Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance); // para aceitar acentos no CSV
@@ -85,6 +86,11 @@ builder.Services.AddSwaggerGen(c =>
             new string[] {}
         }
     });
+
+    // leitura dos comentários XML
+    var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+    c.IncludeXmlComments(xmlPath);
 });
 
 var app = builder.Build();
