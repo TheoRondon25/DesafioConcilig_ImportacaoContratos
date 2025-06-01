@@ -1,14 +1,14 @@
 [
   {
     "ContainingType": "ImportaContratosHub.API.Controllers.ImportacaoController",
-    "Method": "UploadCsv",
+    "Method": "Upload",
     "RelativePath": "api/Importacao/upload",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Arquivo",
+        "Name": "File",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
       }

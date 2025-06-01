@@ -2,17 +2,13 @@
 
 public class ArquivoImportado
 {
-    // Criando as propriedades do arquivoque será importado
     public int Id { get; set; }
     public string NomeArquivo { get; set; }
-    public DateTime DataExportacao { get; set; }
-
-    // Relaciona este arquivo com o usuario 
+    public DateTime DataImportacao { get; set; }
+    
+    // Relaciona este arquivo importado com o usuario que fez a importação
     public int UsuarioId { get; set; }
 
-    // Permite acessar diretamente os dados do Usuario via EF (ex: Nome do Usuario)
+    // Permite acessar o usuario diretamente
     public Usuario Usuario { get; set; }
-
-    // Um arquivo pode conter varios contratos 
-    public ICollection<Contrato> Contratos { get; set; }
 }

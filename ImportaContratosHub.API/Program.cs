@@ -1,42 +1,34 @@
 using ImportaContratosHub.API.DataBase;
 using ImportaContratosHub.API.Services;
+using ImportadorContratos.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddControllers();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-    {
-        Title = "ImportaContratosHub.API",
-        Version = "v1"
-    });
-});
-
 
 // Configura o ApplicationDbContext com SQL Server (usando a string de conexao do appsettings.json)
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Registra o serviço de importação de CSV
-builder.Services.AddScoped<ImportadorCsvService>();
+builder.Services.AddScoped<IContratoService, ContratoService>();
+
+// Add services to the container.
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
+    app.UseSwagger(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "ImportaContratosHub.API v1");
+        // resolvendo erro de versao do openApi que nao abria o swagger para receber arquivo
+        c.OpenApiVersion = Microsoft.OpenApi.OpenApiSpecVersion.OpenApi2_0;
     });
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
